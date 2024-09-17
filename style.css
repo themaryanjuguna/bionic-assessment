@@ -95,33 +95,12 @@
   
   }
 
-  @media only screen and (max-width: 320px) {
+/* Responsive Design for Smallest Viewport (320px) */
+  @media only screen and (max-width: 800px) {
     body {
       .container {
         flex-direction: column;
-        flex-wrap: wrap;
-        max-width: 280px;
-        margin: 40px 0 40px 0;
-        justify-content: center;  
-      align-items: center;    
-      }
-
-      .service-area, .helpful-articles {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
+        max-width: 320px;
+        margin: 0 auto;}
     }
-  } 
-
-/* Smallest viewport width supported is 320px (iPhone SE screen width)
-  /* @media only screen and (max-width: 320px) {
-    body {
-      .container {
-        flex-direction: column;
-        max-width: 280px; 
-        margin: 20px 0; 
-      }
-
-    }
-  } */
-
+  }
