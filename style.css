@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
-    align-items: center;
+    align-items: top;
     justify-content: center;
     
   }
@@ -33,9 +33,11 @@
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
-      align-items: center;
-      justify-content: center;
-      
+      justify-content: center;      
+    }
+
+    .map {
+      margin: 0;
     }
 }
 
@@ -45,6 +47,9 @@
     justify-content: top;
     padding-left: 60px;
     padding-right: 60px;
+    a{
+      text-decoration: none;
+    }
 }
 
 .helpful-articles {
@@ -56,6 +61,7 @@
     color: #ab3c3c; 
   }
   h3 {
+    margin-top: 30px;
     color: white;   
   }
 
@@ -83,6 +89,9 @@
   }
   .read-more{
     margin: 20px 0 20px 0;
+    align-items: bottom;
+    line-height: 2em;
+  
   }
 
   @media only screen and (max-width: 800px) {
@@ -97,6 +106,23 @@
         padding-left: 20px;
         padding-right: 20px;
       }
+    }
+  }
+/* Smallest viewport width supported is 320px (iPhone SE screen width) */
+  @media only screen and (max-width: 320px) {
+    body {
+      .container {
+        flex-direction: column;
+        max-width: 280px; 
+        margin: 20px 0; 
+      }
+  
+      .service-area,
+      .helpful-articles {
+        padding-left: 10px; 
+        padding-right: 10px;
+      }
+
     }
   }
 
