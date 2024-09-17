@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
   }
 
@@ -15,20 +17,46 @@
     gap: 20px;
     align-items: center;
     justify-content: center;
+    
   }
 
-  @media only screen and (max-width: 800px) {
-    body {
-      .container {
-        flex-direction: column;
-        max-width: 500px;
-        margin-left: 20px;
-      }
+  .top{
+    background-color: #314b57;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      
     }
-  }
+}
+
+.service-area {
+    margin-bottom: 60px;
+    align-items: top;
+    justify-content: top;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.helpful-articles {
+    padding-left: 60px;
+    padding-right: 60px;
+}
   
   h1, h2, a {
     color: #ab3c3c; 
+  }
+  h3 {
+    color: white;   
   }
 
   a:hover{
@@ -42,46 +70,33 @@
   h2 {
     font-size: 32px;
   }
-
-  h3 {
-    color: white; 
-  }
   
 .subtitles {
+  a {
     text-transform: uppercase;
     text-align: center;
-    text-decoration: bold;
-  }
-
-#top{
-    background-color: #314b57;
+    text-decoration: none;
+    font-weight: 600;
     color: white;
-
-}
-
-#service-area {
-    margin-bottom: 60px;
-    align-items: center;
-}
-
-#helpful-articles {
-    padding-left: 60px;
-    padding-right: 60px;
-}
-
-
-  
-  /* .top {
-    grid-column: 1 / 6; 
+    cursor: pointer;
   }
-  
-  .service-area {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
   }
-  
-  .helpful-articles {
-    grid-column: 3 / 6; 
-  } */
+  .read-more{
+    margin: 20px 0 20px 0;
+  }
+
+  @media only screen and (max-width: 800px) {
+    body {
+      .container {
+        flex-direction: column;
+        max-width: 500px;
+        margin: 40px 0 40px 0;
+      }
+
+      .service-area, .helpful-articles {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
 
